@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/showAllStudentsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="136dp"
+        android:text="Показать всех студентов"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addStudentBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="188dp"
+        android:text="Добавить студента"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showAllStudentsBtn" />
+
+    <Button
+        android:id="@+id/sortStudentsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="148dp"
+        android:text="Сортировать студентов"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/removeStudentBtn" />
+
+    <Button
+        android:id="@+id/removeStudentBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="200dp"
+        android:text="Удалить студента"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showAllStudentsBtn" />
+
+    <Button
+        android:id="@+id/removeStudentBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Удалить студента"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/editStudentBtn2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/enterNum"
+        app:layout_constraintTop_toBottomOf="@+id/enterNum" />
+
+    <TextView
+        android:id="@+id/StudentTxt"
+        android:layout_width="169dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="644dp"
+        android:layout_marginEnd="152dp"
+        android:text="Добавить"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/socialAddBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="120dp"
+        android:text="Присвоить соц. стипендию"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="76dp"
+        android:text="Поиск"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/searchBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="636dp"
+        android:layout_marginEnd="160dp"
+        android:visibility="invisible"
+        android:text="Поиск"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/enterNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Введите номер студента"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addStudentInput" />
+
+    <EditText
+        android:id="@+id/addStudentInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Введите студента"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sortStudentsBtn" />
+
+    <Button
+        android:id="@+id/socialAddedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="3dp"
+        android:text="присвоить"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/removeStudentBtn2" />
+
+    <Button
+        android:id="@+id/editStudentBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Изменить студента"
+        app:layout_constraintEnd_toEndOf="@+id/addStudentBtn"
+        app:layout_constraintTop_toBottomOf="@+id/addStudentBtn" />
+
+    <Button
+        android:id="@+id/editStudentBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="103dp"
+        android:text="Изменить студента"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/removeStudentBtn2" />
+
+    <Button
+        android:id="@+id/buttonCameraOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="120dp"
+        android:text="Открыть камеру"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addBtn" />
+
+    <ImageView
+        android:id="@+id/cameraPicture"
+        android:layout_width="142dp"
+        android:layout_height="138dp"
+        android:src = "@mipmap/ic_launcher"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintStart_toEndOf="@+id/editStudentBtn"
+        app:layout_constraintTop_toBottomOf="@+id/searchBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
